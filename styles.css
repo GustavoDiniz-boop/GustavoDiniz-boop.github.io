@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f08d6e;
+    padding: 0rem;
+}
+
+header {
+    background: linear-gradient(to bottom, #FF5722, #f08d6e);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transition: background 0.5s ease;
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Faz os itens ficarem em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaço entre os itens */
+}
+nav li {
+    display: inline-block; /* Alternativa ao flex, caso prefira */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    transition: all 0.3s ease; /* Suaviza todas as transições */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    width: 0;
+    margin: auto;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section {
+    background-color: #f5f5dc; /* Cor bege claro */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #FF5722;
+    border-bottom: 2px solid #FF5722;
+    padding-bottom: 10px;
+}
+
+a {
+    color: black
+}
+
+p2 {   
+    color: grey
+}
+
+h3 {
+    padding-bottom: 0.3px
+}
+
+.texto-cinza {
+    color: rgb(148, 116, 116);
+    margin-top: 5px;
+}
+
+.sem-espaco {
+    margin-bottom: 0;
+    border-bottom: 2px solid #dddddd; /* Linha cinza clara sutil */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

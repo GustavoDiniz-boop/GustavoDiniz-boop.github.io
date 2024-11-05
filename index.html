@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meu Currículo</title>      
+</head>
+<body>
+    <header>
+        <h1>Gustavo Diniz Bezerra</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#competencias">Competências</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="sobre" class="content-section">
+            <h2>Sobre Mim</h2>
+            <p>Estudante de Sistemas de Informação no 6º semestre (3º ano), com sólida base acadêmica e prática em
+                desenvolvimento de software, bancos de dados, redes de computadores e segurança da informação.<br><br></p>
+            <p> Participei de diversos projetos acadêmicos e estágios, onde pude aprimorar minhas habilidades
+                técnicas e de resolução de problemas.<br><br></p>
+            <p>Busco oportunidades para aplicar e expandir meus conhecimentos em um ambiente dinâmico
+                e colaborativo, contribuindo para o crescimento da organização e desenvolvimento de soluções
+                tecnológicas inovadoras.<br><br></p>
+        </div>
+
+        <div id="formacao" class="content-section">
+            <h2>Formação</h2>
+                <h3 class="sem-espaco">Ensino Médio com Técnico de Informática.</h3>
+                <p class="texto-cinza">- Janeiro de 2019 a Dezembro de 2021</p>
+                <h3 class="sem-espaco">Bacharelado em Sistemas de Informação</h3>
+                <p class="texto-cinza">- Janeiro de 2022 até Dezembro 2025 (Cursando)</p>
+        </div>
+
+        <div id="experiencia" class="content-section">
+            <h2>Experiências</h2>
+            <h3 class="sem-espaco">Auxiliar de Escritório Contábil</h3>
+            <p class="texto-cinza">- Janeiro de 2022 á Fevereiro de 2024</p>
+
+        </div>
+
+        <div id="competencias" class="content-section">
+            <h2>Competências</h2>
+            <ul>
+                <li>Análise de Dados</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>MySQL</li>
+                <li>Inglês Fluente</li>
+                <li>Gestão de Riscos</li>
+                <li>Administração</li>
+            </ul>
+        </div>
+
+        <div id="contato" class="content-section">
+            <h2>Contato</h2>
+            <ul>
+                <a href="mailto:diniz.b.office@gmail.com">diniz.b.office@gmail.com</a>
+            </ul>
+        </div>
+
+    </main>
+
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                window.scroll({
+                    top: targetSection.offsetTop - 20, // Subtraindo 20px para um pequeno espaço no topo
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
